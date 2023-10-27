@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+}
+
+@font-face {
+  font-family: "VKsFont";
+  src: url(fonts/VWHead-Regular.otf) format("truetype");
+}
+body {
+  background-color: #e8e8e8;
+  font-family: "VKsFont", sans-serif;
+}
+
+header {
+  background-color: #292929;
+  padding: 20px;
+  display: flex;
+  height: 90px;
+}
+
+.banner_slide {
+  background-color: #ffffff;
+  padding: 10px;
+  height: 35vh;
+  border-radius: 0px 0px 50px 50px;
+}
+
+.home_boxes {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.container {
+  background-color: red;
+  padding: 20px;
+  width: 250px;
+  height: 70px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.marcas_boxes {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 50px;
+}
+
+.logo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  width: 165px;
+  height: 170px;
+}
+
+.logo_container img {
+  align-content: center;
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+}
+
+nav {
+  position: relative;
+  margin-left: auto;
+}
+
+a {
+  color: #ff0000;
+  font-weight: bolder;
+}
+
+a:hover {
+  color: #ff0000ab;
+}
