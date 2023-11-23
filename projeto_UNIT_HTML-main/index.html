@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,97 +12,49 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
       <img src="Midia/icons/logo.png" alt="MyCar_logo" />
       <nav>
         <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">+Vendidos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Ofertas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Entrar</a>
-          </li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">+Vendidos</a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Entrar</a></li>
         </ul>
       </nav>
     </header>
     <aside class="banner_slide">
-      <div id="carouselExample" class="carousel slide">
+      <div id="meuCarrossel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#meuCarrossel" data-slide-to="0" class="active"></li>
+          <li data-target="#meuCarrossel" data-slide-to="1"></li>
+          <li data-target="#meuCarrossel" data-slide-to="2"></li>
+        </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
-              width="800"
-              height="400"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: First slide"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="auto" height="auto" fill="#777"></rect>
-            </svg>
+            <img class="d-block w-100" style="width: 50%;" src="Midia/chevrolet/chevrolet_logo.png" alt="Primeiro Slide">
           </div>
           <div class="carousel-item">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
-              width="800"
-              height="400"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: Second slide"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="auto" height="auto" fill="#666"></rect>
-              <text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text>
-            </svg>
+            <img class="d-block w-100" style="width: 50%;" src="Midia/fiat/fiat_argo.png" alt="Segundo Slide">
           </div>
           <div class="carousel-item">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
-              width="800"
-              height="400"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: Third slide"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="auto" height="auto" fill="#555"></rect>
-              <text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text>
-            </svg>
+            <img class="d-block w-100" style="width: 50%;" src="Midia/renault/renault_logo.png" alt="Terceiro Slide">
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
+        <a class="carousel-control-prev" href="#meuCarrossel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#meuCarrossel" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+        </div>
       </div>
     </aside>
     <div class="home_boxes">
@@ -137,5 +89,7 @@
         <img src="Midia/volkswagen/volkswagen_logo.png" alt="Volkswagen" />
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   </body>
 </html>
