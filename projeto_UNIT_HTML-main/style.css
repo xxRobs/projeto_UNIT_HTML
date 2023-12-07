@@ -73,7 +73,7 @@ nav a:hover {
   text-transform: uppercase;
   font-weight: 600;
   color: #ffffff;
-  margin: 0;
+  margin: auto;
 }
 
 .marcas_boxes {
@@ -97,6 +97,10 @@ nav a:hover {
   transition: transform 0.3s ease-in-out;
 }
 
+.logo_container:hover {
+  transform: translateY(-10px);
+}
+
 .logo_container img {
   max-width: 90%;
   max-height: 90%;
@@ -106,14 +110,48 @@ nav a:hover {
   transform: scale(1.1);
 }
 
+.car_boxes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: -205px auto;
+  gap: 30px;
+}
+
+.car_box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+}
+
+.car_box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
 .container_car {
   background-color: #ffffff;
+  display: flex;
+  justify-content: center;
   padding: 35px;
   width: 250px;
   height: 250px;
   margin-top: 350px;
   border-radius: 20px;
   box-shadow: 0px 0px 11px -3px #000000;
+}
+
+.container_car img {
+  display: block;
+  margin: auto;
+  max-width: 150%;
+  max-height: 100%;
+  border-radius: 5px;
 }
 
 /* Estilo Carrossel  */
@@ -152,4 +190,9 @@ nav a:hover {
 
 .carousel-control-next {
   right: 0;
+}
+
+.carousel-image {
+  width: 450px;
+  height: auto;
 }
